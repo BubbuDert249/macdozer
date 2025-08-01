@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "macdozer"
+version = "1.0.0"
+description = "A Python tool to make Mac .app's on Windows, macOS and Linux."
+authors = [
+  { name = "BubbuDert" }
+]
+license = { text = "MIT" }
+requires-python = ">=3.6"
+keywords = ["macos", "app-bundle", "applescript", "automation"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: MacOS :: MacOS X",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Software Development :: Build Tools"
+]
+
+[tool.setuptools.packages.find]
+where = ["macdozer"]
